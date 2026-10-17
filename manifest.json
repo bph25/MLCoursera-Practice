@@ -1,0 +1,382 @@
+{
+  "source": "/Users/mike/Documents/ke/github-repos/Machine-Learning-Specialization-Coursera",
+  "assignments": [
+    {
+      "id": "01_linear_regression",
+      "title": "C1 W2 · 线性回归",
+      "notebook": "assignments/01_linear_regression/assignment.ipynb",
+      "source": "C1 - Supervised Machine Learning - Regression and Classification/week2/C1W2A1/C1_W2_Linear_Regression.ipynb",
+      "dependencies": "NumPy",
+      "topics": "代价函数、梯度",
+      "assets": [
+        "data/ex1data1.txt",
+        "data/ex1data2.txt",
+        "public_tests.py",
+        "utils.py"
+      ],
+      "exercise_cells": 2,
+      "targets": [
+        "compute_cost",
+        "compute_gradient"
+      ],
+      "removed_hint_cells": 3
+    },
+    {
+      "id": "02_logistic_regression",
+      "title": "C1 W3 · 逻辑回归",
+      "notebook": "assignments/02_logistic_regression/assignment.ipynb",
+      "source": "C1 - Supervised Machine Learning - Regression and Classification/week3/C1W3A1/C1_W3_Logistic_Regression.ipynb",
+      "dependencies": "NumPy",
+      "topics": "Sigmoid、损失、梯度、分类、正则化",
+      "assets": [
+        "data/ex2data1.txt",
+        "data/ex2data2.txt",
+        "images/figure 1.png",
+        "images/figure 2.png",
+        "images/figure 3.png",
+        "images/figure 4.png",
+        "images/figure 5.png",
+        "images/figure 6.png",
+        "public_tests.py",
+        "test_utils.py",
+        "utils.py"
+      ],
+      "exercise_cells": 6,
+      "targets": [
+        "sigmoid",
+        "compute_cost",
+        "compute_gradient",
+        "predict",
+        "compute_cost_reg",
+        "compute_gradient_reg"
+      ],
+      "removed_hint_cells": 9
+    },
+    {
+      "id": "03_neural_network_binary",
+      "title": "C2 W1 · 神经网络二分类",
+      "notebook": "assignments/03_neural_network_binary/assignment.ipynb",
+      "source": "C2 - Advanced Learning Algorithms/week1/C2W1A1/C2_W1_Assignment.ipynb",
+      "dependencies": "TensorFlow",
+      "topics": "网络建模、单样本/批量前向传播",
+      "assets": [
+        "autils.py",
+        "data/X.npy",
+        "data/y.npy",
+        "images/C2_W1_Assign1.PNG",
+        "images/C2_W1_Assign1_BroadcastIndexes.PNG",
+        "images/C2_W1_Assign1_BroadcastMatrix.PNG",
+        "images/C2_W1_Assign1_Broadcasting.gif",
+        "images/C2_W1_Assign1_VectorAdd.PNG",
+        "images/C2_W1_CoffeeRoasting.png",
+        "images/C2_W1_L3_Lab01_3Neurons.PNG",
+        "images/C2_W1_MatrixMatrix.PNG",
+        "images/C2_W1_NeuronsAndLayers.png",
+        "images/C2_W1_RoastingDecision.PNG",
+        "images/C2_W1_RoastingNetwork.PNG",
+        "images/C2_W1_VectorMatrix.PNG",
+        "images/C2_W1_dense.PNG",
+        "images/C2_W1_dense2.PNG",
+        "public_tests.py",
+        "utils.py"
+      ],
+      "exercise_cells": 3,
+      "targets": [
+        "model",
+        "my_dense",
+        "my_dense_v"
+      ],
+      "removed_hint_cells": 4
+    },
+    {
+      "id": "04_neural_network_multiclass",
+      "title": "C2 W2 · 神经网络多分类",
+      "notebook": "assignments/04_neural_network_multiclass/assignment.ipynb",
+      "source": "C2 - Advanced Learning Algorithms/week2/C2W2A1/C2_W2_Assignment.ipynb",
+      "dependencies": "TensorFlow",
+      "topics": "Softmax、多分类网络",
+      "assets": [
+        "autils.py",
+        "data/X.npy",
+        "data/y.npy",
+        "deeplearning.mplstyle",
+        "images/C2_W2_Assigment_NN.png",
+        "images/C2_W2_BinaryVsMultiClass.png",
+        "images/C2_W2_NNSoftmax.PNG",
+        "images/C2_W2_ReLu.png",
+        "images/C2_W2_SoftMaxCost.png",
+        "images/C2_W2_SoftMaxNN.png",
+        "images/C2_W2_Softmax.png",
+        "images/C2_W2_SoftmaxReg_NN.png",
+        "images/C2_W2_smallnetwork.png",
+        "lab_utils_common.py",
+        "lab_utils_softmax.py",
+        "logs/train/events.out.tfevents.1645828646.ed92f2b0de47.31.186.v2",
+        "logs/train/events.out.tfevents.1645828646.ed92f2b0de47.profile-empty",
+        "logs/train/events.out.tfevents.1647805546.30f1e0ee4ffd.31.186.v2",
+        "public_tests.py"
+      ],
+      "exercise_cells": 2,
+      "targets": [
+        "my_softmax",
+        "model"
+      ],
+      "removed_hint_cells": 3
+    },
+    {
+      "id": "05_model_evaluation",
+      "title": "C2 W3 · 模型评估与改进",
+      "notebook": "assignments/05_model_evaluation/assignment.ipynb",
+      "source": "C2 - Advanced Learning Algorithms/week3/C2W3A1/C2_W3_Assignment.ipynb",
+      "dependencies": "TensorFlow",
+      "topics": "误差、复杂/简单/正则化模型",
+      "assets": [
+        "assigment_utils.py",
+        "deeplearning.mplstyle",
+        "images/C2_W3_BiasVarianceDegree.png",
+        "images/C2_W3_Compute_Cost_linear.png",
+        "images/C2_W3_TrainingVsNew.png",
+        "images/C2_W3_TrainingVsNew_Slide.png",
+        "images/C2_W4_degree.png",
+        "images/C2_W4_justright.PNG",
+        "public_tests_a1.py",
+        "utils.py"
+      ],
+      "exercise_cells": 5,
+      "targets": [
+        "eval_mse",
+        "eval_cat_err",
+        "model",
+        "model_s",
+        "model_r"
+      ],
+      "removed_hint_cells": 5
+    },
+    {
+      "id": "06_decision_tree",
+      "title": "C2 W4 · 决策树",
+      "notebook": "assignments/06_decision_tree/assignment.ipynb",
+      "source": "C2 - Advanced Learning Algorithms/week4/C2W4A1/C2_W4_Decision_Tree_with_Markdown.ipynb",
+      "dependencies": "NumPy",
+      "topics": "熵、数据划分、信息增益、最佳特征",
+      "assets": [
+        "public_tests.py"
+      ],
+      "exercise_cells": 4,
+      "targets": [
+        "compute_entropy",
+        "split_dataset",
+        "compute_information_gain",
+        "get_best_split"
+      ],
+      "removed_hint_cells": 4
+    },
+    {
+      "id": "07_kmeans",
+      "title": "C3 W1 · K-means",
+      "notebook": "assignments/07_kmeans/assignment.ipynb",
+      "source": "C3 - Unsupervised Learning, Recommenders, Reinforcement Learning/week1/C3W1A/C3W1A1/C3_W1_KMeans_Assignment.ipynb",
+      "dependencies": "NumPy",
+      "topics": "质心分配与更新、图像压缩",
+      "assets": [
+        "bird_small.png",
+        "data/ex7_X.npy",
+        "images/bird_small.png",
+        "images/figure 1.png",
+        "images/figure 2.png",
+        "images/figure 3.png",
+        "public_tests.py",
+        "utils.py"
+      ],
+      "exercise_cells": 2,
+      "targets": [
+        "find_closest_centroids",
+        "compute_centroids"
+      ],
+      "removed_hint_cells": 2
+    },
+    {
+      "id": "08_anomaly_detection",
+      "title": "C3 W1 · 异常检测",
+      "notebook": "assignments/08_anomaly_detection/assignment.ipynb",
+      "source": "C3 - Unsupervised Learning, Recommenders, Reinforcement Learning/week1/C3W1A/C3W1A2/C3_W1_Anomaly_Detection.ipynb",
+      "dependencies": "NumPy",
+      "topics": "高斯参数估计、F1 与阈值选择",
+      "assets": [
+        "data/X_part1.npy",
+        "data/X_part2.npy",
+        "data/X_val_part1.npy",
+        "data/X_val_part2.npy",
+        "data/y_val_part1.npy",
+        "data/y_val_part2.npy",
+        "images/figure1.png",
+        "images/figure2.png",
+        "images/figure3.png",
+        "public_tests.py",
+        "utils.py"
+      ],
+      "exercise_cells": 2,
+      "targets": [
+        "estimate_gaussian",
+        "select_threshold"
+      ],
+      "removed_hint_cells": 3
+    },
+    {
+      "id": "09_collaborative_filtering",
+      "title": "C3 W2 · 协同过滤",
+      "notebook": "assignments/09_collaborative_filtering/assignment.ipynb",
+      "source": "C3 - Unsupervised Learning, Recommenders, Reinforcement Learning/week2/C3W2/C3W2A1/C3_W2_Collaborative_RecSys_Assignment.ipynb",
+      "dependencies": "TensorFlow",
+      "topics": "循环/向量化代价函数（均需自己实现）",
+      "assets": [
+        "data/small_movie_list.csv",
+        "data/small_movies_R.csv",
+        "data/small_movies_W.csv",
+        "data/small_movies_X.csv",
+        "data/small_movies_Y.csv",
+        "data/small_movies_b.csv",
+        "images/ColabFilterLearn.PNG",
+        "images/ColabFilterUse.PNG",
+        "images/RecSysNN.png",
+        "images/distmatrix.PNG",
+        "images/film_award.png",
+        "images/film_filter.png",
+        "images/film_man_action.png",
+        "images/film_movie_camera.png",
+        "images/film_rating.png",
+        "images/film_reel.png",
+        "images/film_strip_vertical.png",
+        "images/movie_camera.png",
+        "public_tests.py",
+        "recsys_utils.py"
+      ],
+      "exercise_cells": 2,
+      "targets": [
+        "cofi_cost_func",
+        "cofi_cost_func_v"
+      ],
+      "removed_hint_cells": 1
+    },
+    {
+      "id": "10_content_recommender",
+      "title": "C3 W2 · 内容推荐",
+      "notebook": "assignments/10_content_recommender/assignment.ipynb",
+      "source": "C3 - Unsupervised Learning, Recommenders, Reinforcement Learning/week2/C3W2/C3W2A2/C3_W2_RecSysNN_Assignment.ipynb",
+      "dependencies": "TensorFlow",
+      "topics": "双塔网络、向量距离",
+      "assets": [
+        "data/content_item_train.csv",
+        "data/content_item_train_header.txt",
+        "data/content_item_vecs.csv",
+        "data/content_movie_list.csv",
+        "data/content_user_to_genre.pickle",
+        "data/content_user_train.csv",
+        "data/content_user_train_header.txt",
+        "data/content_y_train.csv",
+        "images/ColabFilterLearn.PNG",
+        "images/ColabFilterUse.PNG",
+        "images/RecSysNN.png",
+        "images/distmatrix.PNG",
+        "images/film_award.png",
+        "images/film_filter.png",
+        "images/film_man_action.png",
+        "images/film_movie_camera.png",
+        "images/film_rating.png",
+        "images/film_reel.png",
+        "images/film_strip_vertical.png",
+        "images/movie_camera.png",
+        "public_tests.py",
+        "recsysNN_utils.py"
+      ],
+      "exercise_cells": 2,
+      "targets": [
+        "user_NN",
+        "item_NN",
+        "model",
+        "sq_dist"
+      ],
+      "removed_hint_cells": 2
+    },
+    {
+      "id": "11_deep_q_learning",
+      "title": "C3 W3 · Deep Q-learning",
+      "notebook": "assignments/11_deep_q_learning/assignment.ipynb",
+      "source": "C3 - Unsupervised Learning, Recommenders, Reinforcement Learning/week3/C3W3A1/C3_W3_A1_Assignment.ipynb",
+      "dependencies": "TensorFlow + Gym",
+      "topics": "Q 网络、目标网络、Bellman 损失",
+      "assets": [
+        "images/deep_q_algorithm.png",
+        "images/lunar_lander.gif",
+        "images/rl_formalism.png",
+        "public_tests.py",
+        "utils.py"
+      ],
+      "exercise_cells": 2,
+      "targets": [
+        "q_network",
+        "target_q_network",
+        "optimizer",
+        "compute_loss"
+      ],
+      "removed_hint_cells": 2
+    }
+  ],
+  "labs": [
+    {
+      "id": "00_numpy",
+      "title": "NumPy 与形状",
+      "when": "C1 W1 前",
+      "notebook": "labs/00_numpy.ipynb",
+      "exercise_cells": 2
+    },
+    {
+      "id": "01_gradient_descent",
+      "title": "代价函数与梯度下降",
+      "when": "C1 W1–W2",
+      "notebook": "labs/01_gradient_descent.ipynb",
+      "exercise_cells": 3
+    },
+    {
+      "id": "02_feature_scaling",
+      "title": "特征缩放与数据泄漏",
+      "when": "C1 W2",
+      "notebook": "labs/02_feature_scaling.ipynb",
+      "exercise_cells": 2
+    },
+    {
+      "id": "03_logistic_regularization",
+      "title": "逻辑回归与正则化",
+      "when": "C1 W3",
+      "notebook": "labs/03_logistic_regularization.ipynb",
+      "exercise_cells": 2
+    },
+    {
+      "id": "04_forward_softmax",
+      "title": "神经网络前向传播",
+      "when": "C2 W1–W2",
+      "notebook": "labs/04_forward_softmax.ipynb",
+      "exercise_cells": 2
+    },
+    {
+      "id": "05_model_selection",
+      "title": "数据划分与模型选择",
+      "when": "C2 W3",
+      "notebook": "labs/05_model_selection.ipynb",
+      "exercise_cells": 3
+    }
+  ],
+  "original_notebook_hashes": {
+    "C1 - Supervised Machine Learning - Regression and Classification/week2/C1W2A1/C1_W2_Linear_Regression.ipynb": "c3af5a4f9fab92340dd64b7953eab7925f82c87d4f1f77502f6b0bc23d76f837",
+    "C1 - Supervised Machine Learning - Regression and Classification/week3/C1W3A1/C1_W3_Logistic_Regression.ipynb": "490c7a3455376e798098d4ab982790fe4454e76adfb88532e549239720ef8f45",
+    "C2 - Advanced Learning Algorithms/week1/C2W1A1/C2_W1_Assignment.ipynb": "96c617334060a67514d3417469d4cb98af9adb8c0cf8334b1c92b189f0fb3d5f",
+    "C2 - Advanced Learning Algorithms/week2/C2W2A1/C2_W2_Assignment.ipynb": "48bffed1eb6e53688fcf8ed290fc75ea7dbafbef6815440eba4ab1818d715e17",
+    "C2 - Advanced Learning Algorithms/week3/C2W3A1/C2_W3_Assignment.ipynb": "1d704731f8b89a2672c05f0e536b718e9f58e9fd4d9869c628d71162e65c57ae",
+    "C2 - Advanced Learning Algorithms/week4/C2W4A1/C2_W4_Decision_Tree_with_Markdown.ipynb": "d37b73580b42eb2e68d77208fe0c8e26fcab4498b531d99128104d58b1d4f083",
+    "C3 - Unsupervised Learning, Recommenders, Reinforcement Learning/week1/C3W1A/C3W1A1/C3_W1_KMeans_Assignment.ipynb": "cbd8af70789c1d9121fbf0bd81a007fd201fef2fa946569b20a00b45671c2ed7",
+    "C3 - Unsupervised Learning, Recommenders, Reinforcement Learning/week1/C3W1A/C3W1A2/C3_W1_Anomaly_Detection.ipynb": "6075b3775ed9b5afb28cd38afb7ab5a86700db0a0740899e563b0f5211f7c206",
+    "C3 - Unsupervised Learning, Recommenders, Reinforcement Learning/week2/C3W2/C3W2A1/C3_W2_Collaborative_RecSys_Assignment.ipynb": "b1d6f7bfc5ac22a7cd84c65601586e1f4d0522ad8d0c5b0f338ce6d8928253e7",
+    "C3 - Unsupervised Learning, Recommenders, Reinforcement Learning/week2/C3W2/C3W2A2/C3_W2_RecSysNN_Assignment.ipynb": "cf8cdcc3a445d7a4390b27102e57ea59ecf8eb1d19a2ca7ba04b9ffb8d93cdf6",
+    "C3 - Unsupervised Learning, Recommenders, Reinforcement Learning/week3/C3W3A1/C3_W3_A1_Assignment.ipynb": "e80364d622f41b1f37b2c6835b46779908da81057fa6604da0204089dd046903"
+  }
+}

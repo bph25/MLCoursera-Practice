@@ -1,0 +1,9 @@
+jupyterlab
+numpy
+matplotlib
+scipy
+pandas
+scikit-learn
+tabulate
+ipywidgets
+networkx

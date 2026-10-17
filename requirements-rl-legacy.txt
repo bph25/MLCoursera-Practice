@@ -1,0 +1,6 @@
+-r requirements-tensorflow.txt
+gym[box2d]==0.24.1
+imageio
+imageio-ffmpeg
+pillow
+statsmodels

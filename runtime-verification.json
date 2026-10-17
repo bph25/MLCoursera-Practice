@@ -1,0 +1,27 @@
+[
+  {
+    "assignment": "01_linear_regression",
+    "all_code_cells_executed_with_transient_original_functions": 16,
+    "no_solved_notebook_saved": true
+  },
+  {
+    "assignment": "02_logistic_regression",
+    "all_code_cells_executed_with_transient_original_functions": 36,
+    "no_solved_notebook_saved": true
+  },
+  {
+    "assignment": "06_decision_tree",
+    "all_code_cells_executed_with_transient_original_functions": 16,
+    "no_solved_notebook_saved": true
+  },
+  {
+    "assignment": "07_kmeans",
+    "all_code_cells_executed_with_transient_original_functions": 19,
+    "no_solved_notebook_saved": true
+  },
+  {
+    "assignment": "08_anomaly_detection",
+    "all_code_cells_executed_with_transient_original_functions": 16,
+    "no_solved_notebook_saved": true
+  }
+]

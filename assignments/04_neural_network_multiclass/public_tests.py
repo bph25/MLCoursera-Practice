@@ -24,8 +24,8 @@ def test_model(target, classes, input_size):
     
     assert len(target.layers) == 3, \
         f"Wrong number of layers. Expected 3 but got {len(target.layers)}"
-    assert target.input.shape.as_list() == [None, input_size], \
-        f"Wrong input shape. Expected [None,  {input_size}] but got {target.input.shape.as_list()}"
+    assert list(target.input_shape) == [None, input_size], \
+        f"Wrong input shape. Expected [None, {input_size}] but got {list(target.input_shape)}"
     i = 0
     expected = [[Dense, [None, 25], relu],
                 [Dense, [None, 15], relu],
@@ -34,8 +34,8 @@ def test_model(target, classes, input_size):
     for layer in target.layers:
         assert type(layer) == expected[i][0], \
             f"Wrong type in layer {i}. Expected {expected[i][0]} but got {type(layer)}"
-        assert layer.output.shape.as_list() == expected[i][1], \
-            f"Wrong number of units in layer {i}. Expected {expected[i][1]} but got {layer.output.shape.as_list()}"
+        assert list(layer.output.shape) == expected[i][1], \
+            f"Wrong number of units in layer {i}. Expected {expected[i][1]} but got {list(layer.output.shape)}"
         assert layer.activation == expected[i][2], \
             f"Wrong activation in layer {i}. Expected {expected[i][2]} but got {layer.activation}"
         i = i + 1

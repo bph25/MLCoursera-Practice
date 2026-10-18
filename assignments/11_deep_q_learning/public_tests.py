@@ -9,8 +9,8 @@ def test_network(target):
     state_size = 8
     i = 0
     assert len(target.layers) == 3, f"Wrong number of layers. Expected 3 but got {len(target.layers)}"
-    assert target.input.shape.as_list() == [None, state_size], \
-        f"Wrong input shape. Expected [None,  400] but got {target.input.shape.as_list()}" 
+    assert list(target.input_shape) == [None, state_size], \
+        f"Wrong input shape. Expected [None, {state_size}] but got {target.input_shape}"
     expected = [[Dense, [None, 64], relu],
                 [Dense, [None, 64], relu],
                 [Dense, [None, num_actions], linear]]
@@ -18,8 +18,8 @@ def test_network(target):
     for layer in target.layers:
         assert type(layer) == expected[i][0], \
             f"Wrong type in layer {i}. Expected {expected[i][0]} but got {type(layer)}"
-        assert layer.output.shape.as_list() == expected[i][1], \
-            f"Wrong number of units in layer {i}. Expected {expected[i][1]} but got {layer.output.shape.as_list()}"
+        assert list(layer.output.shape) == expected[i][1], \
+            f"Wrong number of units in layer {i}. Expected {expected[i][1]} but got {layer.output.shape}"
         assert layer.activation == expected[i][2], \
             f"Wrong activation in layer {i}. Expected {expected[i][2]} but got {layer.activation}"
         i = i + 1
@@ -76,4 +76,3 @@ def test_compute_loss(target):
     assert np.isclose(loss, 1), f"Wrong value. Expected {1}, got {loss}"
 
     print("\033[92mAll tests passed!")
-    

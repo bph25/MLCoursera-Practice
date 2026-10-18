@@ -1,5 +1,6 @@
 import base64
 import random
+from pathlib import Path
 from itertools import zip_longest
 
 import imageio
@@ -23,7 +24,7 @@ random.seed(SEED)
 
 
 def get_experiences(memory_buffer):
-    experiences = random.sample(memory_buffer, k=MINIBATCH_SIZE)
+    experiences = random.sample(list(memory_buffer), k=MINIBATCH_SIZE)
     states = tf.convert_to_tensor(np.array([e.state for e in experiences if e is not None]),dtype=tf.float32)
     actions = tf.convert_to_tensor(np.array([e.action for e in experiences if e is not None]), dtype=tf.float32)
     rewards = tf.convert_to_tensor(np.array([e.reward for e in experiences if e is not None]), dtype=tf.float32)
@@ -125,15 +126,17 @@ def embed_mp4(filename):
         
         
 def create_video(filename, env, q_network, fps=30):
+    Path(filename).parent.mkdir(parents=True, exist_ok=True)
     with imageio.get_writer(filename, fps=fps) as video:
         done = False
-        state = env.reset()
-        frame = env.render(mode="rgb_array")
+        state, _ = env.reset()
+        frame = env.render()
         video.append_data(frame)
         while not done:    
             state = np.expand_dims(state, axis=0)
             q_values = q_network(state)
             action = np.argmax(q_values.numpy()[0])
-            state, _, done, _ = env.step(action)
-            frame = env.render(mode="rgb_array")
+            state, _, terminated, truncated, _ = env.step(action)
+            done = terminated or truncated
+            frame = env.render()
             video.append_data(frame)
